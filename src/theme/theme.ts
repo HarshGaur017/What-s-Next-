@@ -14,6 +14,14 @@ const COLORS = {
 
   black: "#000000",
   white: "#FFFFFF",
+
+  // --- ADDED COLORS ---
+  buttonPurple: "#B895F6",       // Solid purple for "Continue" / "Start Task" buttons
+  cardPurpleLight: "#E4D4FA",    // Background for "Your Next Action" card
+  successGreen: "#74D09C",       // Green for the checkmarks
+  successGreenLight: "#E4F6EB",  // Light green background circle behind checkmarks
+  darkSurface: "#212124",        // Dark round button on the first screen
+  iconGray: "#A3A3A8",           // Lighter gray for back arrows and "+" icons
 };
 
 const FONT = {
@@ -24,6 +32,7 @@ const FONT = {
   },
 
   fontSize: {
+    xxs: 10, // ADDED: For tiny timestamps like "30 min" on the right side of the progress list
     xs: 12,
     sm: 14,
     md: 16,
