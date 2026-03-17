@@ -6,8 +6,19 @@ import Animated, {
   withRepeat,
   withTiming
 } from "react-native-reanimated";
+import type { TextStyle } from "react-native";
 
-const ProgressBubble = ({ label, color, size, top, left }) => {
+type ProgressBubbleProps = {
+  label: string;
+  color: string;
+  size: number;
+  top: number;
+  left: number;
+  fontWeight?: TextStyle["fontWeight"];
+  fontSize?: number;
+};
+
+const ProgressBubble: React.FC<ProgressBubbleProps> = ({ label, color, size, top, left, fontWeight, fontSize }) => {
 
   const float = useSharedValue(0);
 
@@ -31,7 +42,7 @@ const ProgressBubble = ({ label, color, size, top, left }) => {
         animatedStyle
       ]}
     >
-      <Text style={styles.text}>{label}</Text>
+      <Text style={[{ fontWeight, fontSize }]}>{label}</Text>
     </Animated.View>
   );
 }
@@ -43,10 +54,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center"
   },
-  text: {
-    fontWeight: "600",
-    fontSize: 16
-  }
 });
 
 export default ProgressBubble;

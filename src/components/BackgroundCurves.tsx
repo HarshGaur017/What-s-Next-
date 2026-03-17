@@ -1,38 +1,53 @@
 import React from "react";
-import Svg, { Path } from "react-native-svg";
+import Svg, { Ellipse } from "react-native-svg";
 
 const BackgroundCurves = () => {
   return (
     <Svg
-      height="600"
+      height="100%"
       width="100%"
-      style={{ position: "absolute", top: 0 }}
+      style={{ position: "absolute", top: 0, left: 0, zIndex: -1 }}
     >
-      <Path
-        d="M20 200 C 120 100, 200 300, 350 200"
-        stroke="white"
-        strokeWidth="1"
+      {/* Top Left Sweeping Curve */}
+      <Ellipse
+        cx="80"
+        cy="220"
+        rx="180"
+        ry="280"
+        stroke="#FFFFFF"
+        strokeWidth="1.5"
         fill="none"
-        opacity="0.2"
+        opacity="0.25"
+        transform="rotate(-15, 80, 220)"
       />
 
-      <Path
-        d="M50 300 C 150 200, 250 400, 380 280"
-        stroke="white"
-        strokeWidth="1"
+      {/* Middle Right Sweeping Curve */}
+      <Ellipse
+        cx="320"
+        cy="300"
+        rx="160"
+        ry="240"
+        stroke="#FFFFFF"
+        strokeWidth="1.5"
         fill="none"
-        opacity="0.2"
+        opacity="0.25"
+        transform="rotate(25, 320, 300)"
       />
 
-      <Path
-        d="M0 400 C 150 300, 250 500, 400 350"
-        stroke="white"
-        strokeWidth="1"
+      {/* Bottom Sweeping Curve */}
+      <Ellipse
+        cx="160"
+        cy="520"
+        rx="240"
+        ry="200"
+        stroke="#FFFFFF"
+        strokeWidth="1.5"
         fill="none"
-        opacity="0.2"
+        opacity="0.25"
+        transform="rotate(-10, -160, 520)"
       />
     </Svg>
   );
-}
+};
 
 export default BackgroundCurves;
