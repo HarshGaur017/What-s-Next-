@@ -10,7 +10,7 @@ import BackgroundCurves from "../../components/BackgroundCurves";
 import BottomWavePattern from "../../components/BottomWavePattern";
 
 const OnboardingScreen = () => {
-    const Navigation = useNavigation<NativeStackNavigationProp<RootStackParamList>>();
+    const navigation = useNavigation<NativeStackNavigationProp<RootStackParamList>>();
   return (
     <LinearGradient colors={["#C7B6F5", "#A88FE8"]} style={styles.container}>
       <BackgroundCurves />
@@ -60,7 +60,7 @@ const OnboardingScreen = () => {
       <View style={styles.bottomContent}>
         <Text style={styles.text}>Start your journey{"\n"}with intention.</Text>
 
-        <Pressable style={styles.button} onPress={()=> Navigation.navigate("Goals")}>
+        <Pressable style={styles.button} onPress={()=> navigation.navigate("Goals")}>
           <ChevronsRight color="white" size={35} />
         </Pressable>
       </View>
