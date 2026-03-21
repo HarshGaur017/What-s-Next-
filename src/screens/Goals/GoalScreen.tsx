@@ -83,7 +83,7 @@ const AnimatedAvatar = () => {
     <Animated.View style={[styles.avatarWrap, avatarAnimatedStyle]}>
       <Animated.View style={[styles.avatarGlow, glowAnimatedStyle]} />
       <Image
-        source={{ uri: 'https://www.lummi.ai/api/render/image/add95e54-5686-4b0a-b211-86dcf54e3c84?token=eyJhbGciOiJIUzI1NiJ9.eyJpZHMiOlsiYWRkOTVlNTQtNTY4Ni00YjBhLWIyMTEtODZkY2Y1NGUzYzg0Il0sInJlc29sdXRpb24iOiJtZWRpdW0iLCJyZW5kZXJTcGVjcyI6eyJlZmZlY3RzIjp7InJlYWwzRCI6e30sInJlZnJhbWUiOnt9fX0sInNob3VsZEF1dG9Eb3dubG9hZCI6ZmFsc2UsImp0aSI6Inh6TE9Kb1gzNEZTc3MtTkVWVWIyWSIsImlhdCI6MTc3NDA5NzgwNSwiZXhwIjoxNzc0MDk3ODY1fQ.S7JN6xjZDXakRNlbIxJq4LxkXhbbgtgKhGLy2n0vKJA' }}
+        source={require('../../assets/images/avatar.png')}
         style={styles.avatar}
       />
     </Animated.View>
