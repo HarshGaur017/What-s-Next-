@@ -8,9 +8,16 @@ import { RootStackParamList } from "../../navigation/types";
 import ProgressBubble from "../../components/ProgressBubble";
 import BackgroundCurves from "../../components/BackgroundCurves";
 import BottomWavePattern from "../../components/BottomWavePattern";
+import { storageService } from "../../services/storageService";
 
 const OnboardingScreen = () => {
-    const navigation = useNavigation<NativeStackNavigationProp<RootStackParamList>>();
+  const navigation = useNavigation<NativeStackNavigationProp<RootStackParamList>>();
+
+  const handleContinue = async () => {
+    await storageService.setHasSeenOnboarding(true);
+    navigation.navigate("Goals");
+  };
+
   return (
     <LinearGradient colors={["#C7B6F5", "#A88FE8"]} style={styles.container}>
       <BackgroundCurves />
@@ -60,13 +67,13 @@ const OnboardingScreen = () => {
       <View style={styles.bottomContent}>
         <Text style={styles.text}>Start your journey{"\n"}with intention.</Text>
 
-        <Pressable style={styles.button} onPress={()=> navigation.navigate("Goals")}>
+        <Pressable style={styles.button} onPress={handleContinue}>
           <ChevronsRight color="white" size={35} />
         </Pressable>
       </View>
     </LinearGradient>
   );
-}
+};
 
 const styles = StyleSheet.create({
 
