@@ -55,19 +55,30 @@ Track completed tasks
 
 
 🎥 Demo
-![Demo](./src/assets/ScreenRecording2026-03-21at6.41.35PM-ezgif.com-video-to-gif-converter.gif)
+
+![Demo](./src/assets/demo.gif)
 
 
 **📸 Screenshots**
 
 🏁 Onboarding
-![Onboarding](./src/assets/Simulator Screenshot - iPhone 17 Pro Max - 2026-03-21 at 18.40.12.png)
+
+![Onboarding](./src/assets/onboarding.png)
+
 🎯 Goals
+
+![Goal](./src/assets/goals.png)
 
 ⚡ Task Generation
 
+![Task](./src/assets/tasks.png)
+
+
+![Task](./src/assets/tasks2.png)
+
 📜 History
 
+![History](./src/assets/history.png)
 
 **🛠 Tech Stack**
 
@@ -88,16 +99,26 @@ Gemini API
 Node.js + PostgreSQL
 
 **🧠 How It Works**
+
 User selects a goal
+
 User selects available time
+
 **AI receives:**
+
 Goal: Learn React Native
+
 Time: 30 minutes
+
 **AI returns:**
+
 Build a small login UI screen using React Native.
+
 User completes → saved to history
 
+
 **📂 Project Structure**
+
 ```
 src/
 
@@ -121,9 +142,10 @@ utils/
 ```
 
 **⚙️ Setup & Installation**
+
 1. Clone the repo
 `git clone https://github.com/your-username/whats-next.git`
-cd whats-next
+2. cd whats-next
 3. Install dependencies
 npm install
 4. Add environment variables
@@ -132,7 +154,7 @@ npm install
 
 `EXPO_PUBLIC_GEMINI_API_KEY=your_api_key_here`
 
-4. Run the app
+5. Run the app
 `npx expo start`
 📦 Build APK (for sharing)
 `npx expo run:android`
@@ -140,11 +162,17 @@ npm install
 or
 
 `npx expo export`
+
 🚧 Future Improvements
+
 🧠 Smart goal prioritization
+
 📅 Calendar integration
+
 🔥 Streak system
+
 💬 AI productivity coach
+
 ☁️ Cloud sync
 
 
@@ -152,12 +180,12 @@ or
 
 This project demonstrates:
 
-✅ Real-world problem solving
-✅ AI integration
-✅ Clean UX thinking
-✅ Product mindset
-✅ End-to-end development
-🌍 Make It Public & Stand Out
+- ✅ Real-world problem solving
+- ✅ AI integration
+- ✅ Clean UX thinking
+- ✅ Product mindset
+- ✅ End-to-end development
+- 🌍 Make It Public & Stand Out
 
 MIT License — feel free to use and modify.
 
