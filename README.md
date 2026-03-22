@@ -55,13 +55,13 @@ Track completed tasks
 
 
 🎥 Demo
-Add your demo video link here
+![Demo](./src/assets/ScreenRecording2026-03-21at6.41.35PM-ezgif.com-video-to-gif-converter.gif)
+
 
 **📸 Screenshots**
 
 🏁 Onboarding
-
-
+![Onboarding](./src/assets/Simulator Screenshot - iPhone 17 Pro Max - 2026-03-21 at 18.40.12.png)
 🎯 Goals
 
 ⚡ Task Generation
